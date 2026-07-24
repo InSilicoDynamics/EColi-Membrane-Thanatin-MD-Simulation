@@ -1,0 +1,74 @@
+# This file was created Wed Jul 22 19:45:09 2026
+# Created by:
+#                     :-) GROMACS - gmx density, 2026.3 (-:
+# 
+# Executable:   /usr/local/gromacs_cuda/bin/gmx
+# Data prefix:  /usr/local/gromacs_cuda
+# Working dir:  /home/busrapolat/Desktop/Deneme_Docking/Membran/protein+membran/Protein+membran_charmm-gui/charmm-gui-8402896924/gromacs
+# Command line:
+#   gmx density -s md_200ns.tpr -f md_final_noPBC.xtc -n index.ndx -o density_thanatin.xvg -d Z
+# gmx density is part of G R O M A C S:
+#
+# GROtesk MACabre and Sinister
+#
+@    title "Partial density"
+@    xaxis  label "Average coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "SOLU"
+    0.115304                0
+    0.345911                0
+    0.576518                0
+    0.807125                0
+     1.03773                0
+     1.26834                0
+     1.49895                0
+     1.72955                0
+     1.96016                0
+     2.19077                0
+     2.42137                0
+     2.65198                0
+     2.88259                0
+      3.1132                0
+      3.3438                0
+     3.57441                0
+     3.80502                0
+     4.03562                0
+     4.26623                0
+     4.49684       0.00591832
+     4.72745         0.580535
+     4.95805          4.82936
+     5.18866          18.5535
+     5.41927          40.4644
+     5.64987          56.9154
+     5.88048          60.9128
+     6.11109          47.0733
+     6.34169          19.6391
+      6.5723          5.33557
+     6.80291         0.772572
+     7.03352        0.0114512
+     7.26412                0
+     7.49473                0
+     7.72534                0
+     7.95594                0
+     8.18655                0
+     8.41716                0
+     8.64777                0
+     8.87837                0
+     9.10898                0
+     9.33959                0
+     9.57019                0
+      9.8008                0
+     10.0314                0
+      10.262                0
+     10.4926                0
+     10.7232                0
+     10.9538                0
+     11.1844                0
+     11.4151                0

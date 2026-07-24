@@ -1,0 +1,39 @@
+integrator              = md
+dt                      = 0.002           ; 2 fs adımlar
+nsteps                  = 100000000       ; Toplam 200 ns (200,000 ps) simülasyon süresi
+nstxout-compressed      = 50000           ; Her 100 ps'te bir yörüngeyi (koordinatları) kaydet
+nstxout                 = 0               ; Ham .trr koordinat yazımını kapat (XTC yeterlidir)
+nstvout                 = 0               ; Hızları kaydetme
+nstfout                 = 0               ; Kuvvetleri kaydetme
+nstcalcenergy           = 100
+nstenergy               = 50000           ; Her 100 ps'te bir enerji verilerini .edr dosyasına yaz
+nstlog                  = 50000           ; Her 100 ps'te bir log dosyasına yaz
+;
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+coulombtype             = PME
+rcoulomb                = 1.2
+;
+tcoupl                  = v-rescale
+tc_grps                 = SOLU MEMB SOLV
+tau_t                   = 1.0 1.0 1.0
+ref_t                   = 310 310 310      ; 310 K Fizyolojik Sıcaklık
+;
+pcoupl                  = C-rescale
+pcoupltype              = semiisotropic    ; Membran simülasyonları için XY ve Z bağımsız XY-Z basınç kontrolü
+tau_p                   = 5.0
+compressibility         = 4.5e-5  4.5e-5
+ref_p                   = 1.0     1.0
+;
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+continuation            = yes              ; Dengelemeden sonra kısıtlamasız devam edildiği için
+;
+nstcomm                 = 100
+comm_mode               = linear
+comm_grps               = SOLU_MEMB SOLV
