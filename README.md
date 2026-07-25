@@ -197,3 +197,15 @@ xmgrace xvg_data/hbond_thanatin_memb.xvg
 ---
 
 *Part of the **inSilico Dynamics** Structural Bioinformatics Portfolio.*
+
+
+## Molecular Dynamics Trajectory Analysis
+
+### 1. E.Coli Membrane vs Thanatin Time-Series (RMSD, RMSF, Rg, Distance)
+![MD Time Series](assets/thanatin_md_analysis.png)
+
+### 2. Thermodynamic Stability (Gibbs Free Energy Landscape - FEL)
+![FEL Plot](assets/fel_plot.png)
+
+### 3. Binding Kinetics (Hydrogen Bond Evolution)
+![H-Bonds over time](assets/hbond_plot.png)
